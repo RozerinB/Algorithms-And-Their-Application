@@ -7,10 +7,12 @@ public class linearSummation {
 		LinearSum(n);
 		long end = System.currentTimeMillis(); //End time of program
 		long runTime= end - start; //calculate duration
-		System.out.println(runTime);
+		int finalAnswer = LinearSum(n);
+		System.out.println("Sum: " + finalAnswer);
+		System.out.println("Run Time: " + runTime); // print as a variable for a better run time
 	}
 
-	public static void LinearSum(int n) {
+	public static int LinearSum(int n) {
 
 		int sum = 0;
 		
@@ -18,7 +20,7 @@ public class linearSummation {
 			sum = sum + i ;
 		}
 		//sum = sum + (n-1) + 1; 
-		System.out.println(sum);
+		return (sum); //  better run timee
 	}
 	/*
 	 * Able to remove linear 15 by using i<= n
